@@ -4,9 +4,15 @@
       Quick Link
     </p>
     <NuxtLink to="/" class="hover:underline">
-      Home
+      GOSIM.org
     </NuxtLink>
-    <NuxtLink to="/blogs" class="hover:underline">
+    <NuxtLink href="https://cfp.gosim.org" class="hover:underline">
+      Call For Proposals
+    </NuxtLink>
+    <NuxtLink href="https://china2024.gosim.org" class="hover:underline">
+      GOSIM China 2024
+    </NuxtLink>
+    <!-- <NuxtLink to="/blogs" class="hover:underline">
       Blogs
     </NuxtLink>
     <NuxtLink to="/categories" class="hover:underline">
@@ -14,6 +20,6 @@
     </NuxtLink>
     <NuxtLink to="/about" class="hover:underline">
       About Me
-    </NuxtLink>
+    </NuxtLink> -->
   </div>
 </template>

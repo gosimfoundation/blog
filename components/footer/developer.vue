@@ -4,45 +4,36 @@ import { footerData } from '~/data'
 
 <template>
   <div>
-    <p class="text-black dark:text-zinc-300   text-2xl py-1 font-semibold">
+    <!-- <p class="text-black dark:text-zinc-300   text-2xl py-1 font-semibold">
       {{ footerData.author }}
-    </p>
+    </p> -->
+    <div class="hidden sm:block col-span-3">
+      <NuxtImg src="/gosim-logo2.svg" quality="50" class="rounded-md" />
+    </div>
     <p class="py-2 dark:text-zinc-300  ">
       {{ footerData.aboutAuthor }}
     </p>
-    <div class="my-3 space-x-3 pb-3">
-      <NuxtLink
-        to="https://github.com/nurRiyad"
-        target="_blank"
-        class="p-2 bg-gray-300 text-gray-800 rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]"
-        aria-label="Github"
-      >
+    <!-- <div class="my-3 space-x-3 pb-3">
+      <NuxtLink to="https://github.com/gosimfoundation" target="_blank"
+        class="p-2 bg-gray-300 text-gray-800 rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="Github">
         <Icon name="fa:github" size="1em" />
       </NuxtLink>
       <NuxtLink
-        to="https://www.linkedin.com/in/nur-riyad/"
+        to="https://www.linkedin.com/in/edwardtan/"
         target="_blank"
         class="p-2 bg-gray-300 text-gray-800 rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]"
         aria-label="LinkedIn"
       >
         <Icon name="fa:linkedin-square" size="1em" />
       </NuxtLink>
-      <NuxtLink
-        to="https://twitter.com/qdnvubp"
-        target="_blank"
-        class="p-2 bg-gray-300 text-gray-800 rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]"
-        aria-label="Twitter"
-      >
-        <Icon name="fa:twitter-square" size="1em" />
+      <NuxtLink to="https://twitter.com/gosimfoundation" target="_blank"
+        class="p-2 bg-gray-300 text-gray-800 rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="Twitter">
+        <Icon name="fa:twitter" size="1em" />
       </NuxtLink>
-      <NuxtLink
-        to="https://stackoverflow.com/users/16781395/nur-riyad"
-        target="_blank"
-        class="p-2 bg-gray-300 text-gray-800 rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]"
-        aria-label="StackOverflow"
-      >
-        <Icon name="fa:stack-overflow" size="1em" />
+      <NuxtLink to="https://mastodon.social/@gosim" target="_blank"
+        class="p-2 bg-gray-300 text-gray-800 rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="Mastodon">
+        <Icon name="uil:link" size="1em" />
       </NuxtLink>
-    </div>
+    </div> -->
   </div>
 </template>

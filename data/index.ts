@@ -3,10 +3,10 @@ export const navbarData = {
 }
 
 export const footerData = {
-  author: 'GOSIM Foundation',
-  aboutAuthor: 'Hi! I am Riyad, a Tech enthusiast, problem solver and software engineer. Currently working at Appscode Inc.',
-  authorInterest: 'I have a fair amount of knowledge of Javascript, Typescript, VueJs, and Nuxt. If you have an interesting idea, either open source or paid let\'s connect.',
-  aboutTheSite: 'This is a personal blog site built with Nuxt3, TailwindCSS, NuxtContent, Nuxt Icon. Currently it\'s deployed in Vercel.',
+  author: 'GOSIM',
+  aboutAuthor: 'Global Open-Source Innovation Meetup',
+  authorInterest: 'Open-Source, Rust, App Development, UI, Web, Cross-Platform, Mobile, Android, iOS, Linux, Windows, macOS, WGPU, Matrix, Fediverse',
+  aboutTheSite: 'This is the blog site of GOSIM.org',
 }
 
 export const homePage = {
@@ -31,13 +31,13 @@ export const aboutPage = {
 }
 
 export const seoData = {
-  description: 'Riyad, Software Engineer at AppsCode, with over 2.5+ years experience in software development.',
-  ogTitle: 'Riyad codes and helps others learn Javascript, Typescript, Vue, Nuxt, & Problem Solving',
-  twitterDescription: 'My blog website, where I play around with Nuxt, Vue, and more and showcase my blog, resources, etc',
+  description: 'GOSIM is a grassroots organization dedicated to promoting open-source software development and innovation.',
+  ogTitle: 'GOSIM Foundation',
+  twitterDescription: 'GOSIM: Global Open-Source Innovation Meetup',
   image: 'https://res.cloudinary.com/dmecmyphj/image/upload/v1673548905/nuxt-blog/cover_ntgs6u.webp',
-  mySite: 'https://blog-nurriyad.vercel.app',
-  twitterHandle: '@qdnvubp',
-  mailAddress: 'asadnurriyad@gmail.com',
+  mySite: 'https://blog.gosim.org',
+  twitterHandle: '@gosimfoundation',
+  mailAddress: 'info@gosim.org',
 }
 
 export const siteMetaData = [

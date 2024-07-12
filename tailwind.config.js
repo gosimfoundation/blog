@@ -7,7 +7,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'spacegrotesk': ['Space Grotesk', 'sans-serif'],
         'big-shoulders': ['"Big Shoulders Display"', 'sans-serif'],
         'redhat': ['"Red Hat Display"', 'sans-serif'],
       },

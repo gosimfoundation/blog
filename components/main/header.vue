@@ -20,10 +20,10 @@ function onClick(val: string) {
       <ul class="flex items-center space-x-3 sm:space-x-6 text-sm sm:text-lg">
         <li>
           <NuxtLink to="/blogs">
-            Blogs
+            All Blogs
           </NuxtLink>
         </li>
-        <li>
+        <!-- <li>
           <NuxtLink to="/categories">
             Categories
           </NuxtLink>
@@ -32,7 +32,7 @@ function onClick(val: string) {
           <NuxtLink to="/about" aria-label="About me">
             About
           </NuxtLink>
-        </li>
+        </li> -->
         <li>
           <ClientOnly>
             <button
@@ -42,7 +42,7 @@ function onClick(val: string) {
               class="hover:scale-110 transition-all ease-out hover:cursor-pointer"
               @click="onClick('dark')"
             >
-              <Icon name="icon-park:moon" size="20" />
+              <Icon name="icon-park-solid:moon" size="20" />
             </button>
             <button
               v-if="colorMode.value === 'dark'"

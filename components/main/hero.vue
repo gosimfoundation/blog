@@ -14,7 +14,7 @@ import { homePage } from '~/data'
         </p>
       </div>
       <div class="px-6 justify-self-center">
-        <LogoDog />
+        <!-- <LogoDog /> -->
       </div>
     </div>
   </div>

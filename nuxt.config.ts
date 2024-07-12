@@ -24,7 +24,7 @@ export default defineNuxtConfig({
   site: {
     url: seoData.mySite,
     identity: {
-      type: 'Person',
+      type: 'Organization',
     },
     twitter: seoData.twitterHandle,
   },
@@ -44,8 +44,8 @@ export default defineNuxtConfig({
 
   colorMode: {
     classSuffix: '',
-    preference: 'dark',
-    fallback: 'light',
+    preference: 'light',
+    fallback: 'dark',
   },
 
   modules: [

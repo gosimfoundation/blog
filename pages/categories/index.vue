@@ -23,8 +23,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content:
-        'Below All the topics are listed on which either I have written a blog or will write a blog in near future.',
+      content: 'Posts under various categories that were #tagged in the posts',
     },
   ],
 })
@@ -34,7 +33,7 @@ const siteData = useSiteConfig()
 defineOgImage({
   props: {
     title: 'Categories',
-    description: 'Below All the topics are listed on which either I have written a blog or will write a blog in near future.',
+    description: 'Posts under various categories that were #tagged in the posts',
     siteName: siteData.url,
   },
 })

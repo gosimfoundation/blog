@@ -62,7 +62,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Here you will find all the blog posts I have written & published on this site.',
+      content: 'Blog contents',
     },
   ],
 })
@@ -72,7 +72,7 @@ const siteData = useSiteConfig()
 defineOgImage({
   props: {
     title: 'Archive',
-    description: 'Here you will find all the blog posts I have written & published on this site.',
+    description: 'Blog archives',
     siteName: siteData.url,
   },
 })
