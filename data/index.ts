@@ -10,7 +10,7 @@ export const footerData = {
 }
 
 export const homePage = {
-  title: 'Global Open-Source Innovation Meetup',
+  title: 'GOSIM : Global Open-Source Innovation Meetup',
   description: 'Created by the Open-Source Community, For the Open-Source Community.',
 }
 

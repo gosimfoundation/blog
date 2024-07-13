@@ -11,7 +11,8 @@ const category = computed(() => {
   if (Array.isArray(name))
     strName = name.at(0) || ''
   else strName = name
-  return makeFirstCharUpper(strName)
+  return (strName)
+  // return makeFirstCharUpper(strName)
 })
 </script>
 

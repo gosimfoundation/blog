@@ -46,9 +46,10 @@ defineOgImage({
       <CategoryCard
         v-for="topic in allTags"
         :key="topic[0]"
-        :title="makeFirstCharUpper(topic[0])"
+        :title="topic[0]"
         :count="topic[1]"
       />
     </div>
   </main>
 </template>
+        <!-- :title="makeFirstCharUpper(topic[0])" -->

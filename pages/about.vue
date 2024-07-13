@@ -29,7 +29,7 @@ defineOgImageComponent('About', {
               {{ aboutPage.title }}
             </h1>
 
-            <div class="my-3 space-x-2 md:space-x-3 pb-10">
+            <!-- <div class="my-3 space-x-2 md:space-x-3 pb-10">
               <NuxtLink
                 to="https://github.com/gosimfoundation"
                 target="_blank"
@@ -38,14 +38,14 @@ defineOgImageComponent('About', {
               >
                 <Icon name="fa:github" size="1em" />
               </NuxtLink>
-              <!-- <NuxtLink
+              <NuxtLink
                 to="https://www.linkedin.com/in/edwardtan/"
                 target="_blank"
                 class="px-2 py-1 lg:px-3 lg:py-2 bg-gray-300 text-gray-800 rounded-md dark:bg-slate-700 dark:text-[#F1F2F4]"
                 aria-label="LinkedIn"
               >
                 <Icon name="fa:linkedin-square" size="1em" />
-              </NuxtLink> -->
+              </NuxtLink>
               <NuxtLink
                 to="https://twitter.com/gosimfoundation"
                 target="_blank"
@@ -62,7 +62,7 @@ defineOgImageComponent('About', {
               >
                 <Icon name="uil:link" size="1em" />
               </NuxtLink>
-            </div>
+            </div> -->
           </div>
           <div class="sm:hidden block col-span-3 pb-5 dark:text-[#F1F2F4]">
             <NuxtImg
