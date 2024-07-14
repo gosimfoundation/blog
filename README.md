@@ -22,7 +22,7 @@ yarn run dev
 yarn run build
 
 # serve in production mode
-yarn run  preview
+yarn run preview
 
 ```
 
