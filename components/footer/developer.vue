@@ -8,11 +8,11 @@ import { footerData } from '~/data'
       {{ footerData.author }}
     </p> -->
     <div class="hidden sm:block col-span-3">
-      <NuxtImg src="/gosim-logo2.svg" width="250" quality="50" class="rounded-md" />
+      <NuxtImg src="/gosim-logo2.svg" width="120" quality="50" class="rounded-md" />
     </div>
-    <p class="py-2 dark:text-zinc-300  ">
+    <!-- <p class="py-2 dark:text-zinc-300  ">
       {{ footerData.aboutAuthor }}
-    </p>
+    </p> -->
     <!-- <div class="my-3 space-x-3 pb-3">
       <NuxtLink to="https://github.com/gosimfoundation" target="_blank"
         class="p-2 bg-gray-300 text-gray-800 rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="Github">

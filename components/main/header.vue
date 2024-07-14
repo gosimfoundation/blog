@@ -9,21 +9,24 @@ function onClick(val: string) {
 
 <template>
   <div class="py-5 border-b dark:border-gray-800 font-semibold">
-    <div class="flex px-6 container max-w-5xl justify-between mx-auto items-baseline ">
-      <ul class="flex items-baseline space-x-5">
+    <div class="flex px-6 container max-w-7xl justify-between mx-auto items-baseline ">
+      <div class="hidden sm:block col-span-3">
+        <NuxtImg src="/gosim-logo2.svg" width="120" quality="50" class="rounded-md" />
+      </div>
+      <!-- <ul class="flex items-baseline space-x-5">
         <li class="text-base sm:text-4xl font-bold">
           <NuxtLink to="/">
             {{ navbarData.homeTitle }}
           </NuxtLink>
         </li>
-      </ul>
+      </ul> -->
       <ul class="flex items-center space-x-3 sm:space-x-6 text-sm sm:text-2xl">
-        <li>
+        <!-- <li>
           <NuxtLink to="/blogs">
             All Blogs
           </NuxtLink>
         </li>
-        <!-- <li>
+        <li>
           <NuxtLink to="/categories">
             Categories
           </NuxtLink>
@@ -33,32 +36,23 @@ function onClick(val: string) {
             About
           </NuxtLink>
         </li> -->
-        <li>
+
+        <!-- <li>
           <ClientOnly>
-            <button
-              v-if="colorMode.value === 'light'"
-              name="light-mode"
-              title="Light"
-              class="hover:scale-110 transition-all ease-out hover:cursor-pointer"
-              @click="onClick('dark')"
-            >
+            <button v-if="colorMode.value === 'light'" name="light-mode" title="Light"
+              class="hover:scale-110 transition-all ease-out hover:cursor-pointer" @click="onClick('dark')">
               <Icon name="icon-park-solid:moon" size="20" />
             </button>
-            <button
-              v-if="colorMode.value === 'dark'"
-              name="dark-mode"
-              title="Dark"
-              class="hover:scale-110 transition-all ease-out hover:cursor-pointer"
-              @click="onClick('light')"
-            >
+            <button v-if="colorMode.value === 'dark'" name="dark-mode" title="Dark"
+              class="hover:scale-110 transition-all ease-out hover:cursor-pointer" @click="onClick('light')">
               <Icon name="noto:sun" size="20" />
             </button>
-            <template #fallback>
+            <template #fallback> -->
               <!-- this will be rendered on server side -->
-              <Icon name="svg-spinners:180-ring" size="20" />
+              <!-- <Icon name="svg-spinners:180-ring" size="20" />
             </template>
           </ClientOnly>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>

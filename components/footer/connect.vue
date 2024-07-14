@@ -3,10 +3,10 @@ import { footerData, seoData } from '~/data'
 </script>
 
 <template>
-  <div>
-    <p class="text-black dark:text-zinc-300   text-base font-semibold">
+  <div class="flex justify-end">
+    <!-- <p class="text-black dark:text-zinc-300   text-base font-semibold">
       Connect With Us
-    </p>
+    </p> -->
     <!-- <p class="dark:text-zinc-300  ">
       {{ footerData.authorInterest }}
     </p> -->

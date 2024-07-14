@@ -46,7 +46,7 @@ withDefaults(defineProps<Props>(), {
             </template>
           </div>
         </div>
-        <h2 class="text-xl font-semibold  text-black dark:text-zinc-300   pb-1 group-hover:text-sky-700 dark:group-hover:text-sky-400">
+        <h2 class="text-2xl font-semibold text-cyan-800 dark:text-zinc-300 pb-1 group-hover:text-sky-500 dark:group-hover:text-sky-400">
           {{ title }}
         </h2>
         <p class="text-ellipsis line-clamp-2 text-base">
