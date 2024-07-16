@@ -7,7 +7,7 @@ import { footerData } from '~/data'
     <!-- <p class="text-black dark:text-zinc-300   text-2xl py-1 font-semibold">
       {{ footerData.author }}
     </p> -->
-    <div class="hidden sm:block col-span-3">
+    <div class=" sm:block col-span-3">
       <NuxtImg src="/gosim-logo2.svg" width="120" quality="50" class="rounded-md" />
     </div>
     <!-- <p class="py-2 dark:text-zinc-300  ">

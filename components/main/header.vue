@@ -10,16 +10,14 @@ function onClick(val: string) {
 <template>
   <div class="py-5 border-b dark:border-gray-800 font-semibold">
     <div class="flex px-6 container max-w-7xl justify-between mx-auto items-baseline ">
-      <div class="hidden sm:block col-span-3">
-        <NuxtImg src="/gosim-logo2.svg" width="120" quality="50" class="rounded-md" />
-      </div>
-      <!-- <ul class="flex items-baseline space-x-5">
+      <ul class="flex items-baseline space-x-5">
         <li class="text-base sm:text-4xl font-bold">
           <NuxtLink to="/">
-            {{ navbarData.homeTitle }}
+            <NuxtImg src="/gosim-logo2.svg" width="120" quality="50" class="rounded-md" />
+            <!-- {{ navbarData.homeTitle }} -->
           </NuxtLink>
         </li>
-      </ul> -->
+      </ul>
       <ul class="flex items-center space-x-3 sm:space-x-6 text-sm sm:text-2xl">
         <!-- <li>
           <NuxtLink to="/blogs">
@@ -48,8 +46,8 @@ function onClick(val: string) {
               <Icon name="noto:sun" size="20" />
             </button>
             <template #fallback> -->
-              <!-- this will be rendered on server side -->
-              <!-- <Icon name="svg-spinners:180-ring" size="20" />
+        <!-- this will be rendered on server side -->
+        <!-- <Icon name="svg-spinners:180-ring" size="20" />
             </template>
           </ClientOnly>
         </li> -->

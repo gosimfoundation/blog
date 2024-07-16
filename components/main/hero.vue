@@ -3,7 +3,7 @@ import { homePage } from '~/data'
 </script>
 
 <template>
-  <div class="container mx-auto rounded-xl my-3 bg-gradient-to-r from-blue-100 to-cyan-200">
+  <div class="container mx-auto rounded-xl my-3 bg-gradient-to-r from-blue-50 to-cyan-100">
     <div class="grid grid-cols-1 sm:grid-cols-2 items-center">
       <div class="px-6 m-5 text-center">
         <h1 class="text-black dark:text-zinc-300   font-semibold leading-tight text-4xl md:text-5xl my-5">
