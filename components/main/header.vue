@@ -8,8 +8,8 @@ function onClick(val: string) {
 </script>
 
 <template>
-  <div class="py-5 border-b dark:border-gray-800 font-semibold">
-    <div class="flex px-6 container max-w-7xl justify-between mx-auto items-baseline ">
+  <div class="py-4 border-b dark:border-gray-800 font-semibold">
+    <div class="flex px-5 container max-w-7xl justify-between mx-auto items-baseline ">
       <ul class="flex items-baseline space-x-5">
         <li class="text-base sm:text-4xl font-bold">
           <NuxtLink to="/">
@@ -18,7 +18,13 @@ function onClick(val: string) {
           </NuxtLink>
         </li>
       </ul>
-      <ul class="flex items-center space-x-3 sm:space-x-6 text-sm sm:text-2xl">
+      <ul class="flex items-center space-x-3 sm:space-x-6 text-sm sm:text-xl">
+        <li>
+          <a href="https://gosim.org"
+            class="block text-center w-full bg-sky-700 hover:bg-cyan-500 p-3 rounded-lg text-[#F1F2F4] text-md">
+            <Icon name="fa:home" size="1.2em" />
+          </a>
+        </li>
         <!-- <li>
           <NuxtLink to="/blogs">
             All Blogs
