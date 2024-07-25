@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'big-shoulders': ['"Big Shoulders Display"', 'sans-serif'],
+        // 'big-shoulders': ['"Big Shoulders Display"', 'sans-serif'],
+        'unbounded': ['"Unbounded"', 'sans-serif'],
         'redhat': ['"Red Hat Display"', 'sans-serif'],
       },
     },
