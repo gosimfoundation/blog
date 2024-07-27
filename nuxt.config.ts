@@ -60,6 +60,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
     '@stefanobartoletti/nuxt-social-share',
+    "@nuxtjs/i18n"
   ],
 
   content: {
@@ -69,4 +70,13 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-07-11',
+
+  i18n: {
+    locales: ["en-US", "zh-CN"],
+    // Used when active locale is not explicitly defined
+    defaultLocale: "en-US",
+    // Disabling automatic locale detection
+    detectBrowserLanguage: false,
+    vueI18n: './i18n.config.ts',
+  },
 })
