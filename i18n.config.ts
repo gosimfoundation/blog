@@ -3,10 +3,14 @@ export default defineI18nConfig(() => ({
   locale: 'en-US',
   messages: {
     "en-US": {
-      welcome: 'Welcome'
+      welcome: 'Welcome',
+      recent_posts: 'Recent Posts',
+      read_more: 'Read More',
     },
     "zh-CN": {
-      welcome: '欢迎'
+      welcome: '欢迎',
+      recent_posts: '最新文章',
+      read_more: '更多',
     },
   },
 }))

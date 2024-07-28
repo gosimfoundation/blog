@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { navbarData } from '../../data'
 
+const switchLocalePath = useSwitchLocalePath()
+
 const colorMode = useColorMode()
 function onClick(val: string) {
   colorMode.preference = val
@@ -25,6 +27,16 @@ function onClick(val: string) {
             <Icon name="fa:home" size="1.2em" />
           </a>
         </li>
+        <li>
+            <NuxtLink :to="switchLocalePath('en-US')">EN</NuxtLink> |
+            <NuxtLink :to="switchLocalePath('zh-CN')">中文</NuxtLink>
+        </li>
+        <!-- <li>
+          <button @click="setLocale('en-US')">en</button>
+        </li>
+        <li>
+          <button @click="setLocale('zh-CN')">中文</button>
+        </li> -->
         <!-- <li>
           <NuxtLink to="/blogs">
             All Blogs

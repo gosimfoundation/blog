@@ -34,7 +34,7 @@ withDefaults(defineProps<Props>(), {
         :alt="alt"
       />
       <div class="px-3 pb-4">
-        <div class="text-black dark:text-zinc-300    pt-3 pb-2">
+        <div class="text-black dark:text-zinc-300 pt-3 pb-2">
           <div class="flex items-center">
             <LogoDate />
             {{ date }}
@@ -53,7 +53,7 @@ withDefaults(defineProps<Props>(), {
           {{ description }}
         </p>
         <div class="flex group-hover:underline text-sky-700 dark:text-sky-400 items-center py-2">
-          <p>Read More</p>
+          <p>{{ $t('read_more')}}</p>
           <LogoArrow />
         </div>
       </div>

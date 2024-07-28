@@ -37,7 +37,7 @@ useHead({
     <div class=" flex flex-row items-center space-x-3 pt-5 mx-3 pb-3">
       <Icon name="mdi:script-text-outline" size="2em" class="text-black dark:text-zinc-300 " />
       <h2 class="text-4xl font-semibold text-black dark:text-zinc-300 ">
-        Recent Post
+       {{ $t('recent_posts')}}
       </h2>
     </div>
 
