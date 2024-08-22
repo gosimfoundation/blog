@@ -66,4 +66,10 @@ function onClick(val: string) {
 .router-link-active .router-link-exact-active  {
   @apply underline
 }
+
+/* Remove underline from header links */
+.prose :is(h1, h2, h3, h4, h5, h6) a {
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
 </style>
