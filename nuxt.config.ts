@@ -72,11 +72,22 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-07-11',
 
   i18n: {
-    locales: ["en-US", "zh-CN"],
-    // Used when active locale is not explicitly defined
-    defaultLocale: "en-US",
-    // Disabling automatic locale detection
-    detectBrowserLanguage: false,
-    vueI18n: './i18n.config.ts',
+    lazy: true,
+    langDir: 'locales/',
+    locales: [
+       {
+        name: 'English',
+        code: 'en',
+        iso: 'en-US',
+        file: 'en-US'
+      },
+      {
+        name: '中文',
+        code: 'zh',
+        iso: 'zh-CN',
+        file: 'zh-CN'
+      },
+   ],
+    defaultLocale: 'en',
   },
 })

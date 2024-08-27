@@ -21,15 +21,17 @@ function onClick(val: string) {
         </li>
       </ul>
       <ul class="flex items-center space-x-3 sm:space-x-6 text-sm sm:text-xl">
-        <li>
+        <!-- <li>
           <a href="https://gosim.org"
-            class="block text-center w-full bg-sky-700 hover:bg-cyan-500 p-3 rounded-lg text-[#F1F2F4] text-md">
-            <Icon name="fa:home" size="1.2em" />
+            class="block text-center w-full bg-sky-700 hover:bg-cyan-500 p-2 rounded-lg text-[#F1F2F4] text-sm">
+            <Icon name="fa:home" size="1.6em" />
           </a>
+        </li> -->
+        <li>
+          <NuxtLink :to="switchLocalePath('en')">EN</NuxtLink>
         </li>
         <li>
-            <NuxtLink :to="switchLocalePath('en-US')">EN</NuxtLink> |
-            <NuxtLink :to="switchLocalePath('zh-CN')">中文</NuxtLink>
+          <NuxtLink :to="switchLocalePath('zh')">中文</NuxtLink>
         </li>
         <!-- <li>
           <button @click="setLocale('en-US')">en</button>
@@ -63,9 +65,8 @@ function onClick(val: string) {
               class="hover:scale-110 transition-all ease-out hover:cursor-pointer" @click="onClick('light')">
               <Icon name="noto:sun" size="20" />
             </button>
-            <template #fallback> -->
-        <!-- this will be rendered on server side -->
-        <!-- <Icon name="svg-spinners:180-ring" size="20" />
+            <template #fallback>
+        <Icon name="svg-spinners:180-ring" size="20" />
             </template>
           </ClientOnly>
         </li> -->
