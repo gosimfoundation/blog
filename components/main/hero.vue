@@ -7,10 +7,10 @@ import { homePage } from '~/data'
     <div class="grid grid-cols-1 sm:grid-cols-2 items-center">
       <div class="px-6 m-5 text-center font-unbounded">
         <h1 class="text-black dark:text-zinc-300 leading-tight text-4xl md:text-5xl my-5">
-          {{ homePage.title }}
+          {{ $t('homePage.title')}}
         </h1>
         <p class="dark:text-zinc-30 ">
-          {{ homePage.description }}
+          {{ $t('homePage.description')}}
         </p>
       </div>
       <div class="px-6 m-6 justify-self-center">

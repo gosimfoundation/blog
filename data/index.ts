@@ -27,14 +27,14 @@ export const categoryPage = {
 export const aboutPage = {
   title: 'GOSIM',
   description: 'Global Open-Source Innovation Meetup',
-  aboutMe: 'Created by the Open-Source Community, For the Open-Source Community.',
+  aboutMe: 'Created by the Open-Source Community, For the Open-Source Community',
 }
 
 export const seoData = {
   description: 'GOSIM is a grassroots organization dedicated to promoting open-source software development and innovation.',
   ogTitle: 'GOSIM Foundation',
   twitterDescription: 'GOSIM: Global Open-Source Innovation Meetup',
-  image: 'https://res.cloudinary.com/dmecmyphj/image/upload/v1673548905/nuxt-blog/cover_ntgs6u.webp',
+  image: 'https://blog.gosim.org/_ipx/w_120&q_50/gosim-logo2.svg',
   mySite: 'https://blog.gosim.org',
   twitterHandle: '@gosimfoundation',
   mailAddress: 'info@gosim.org',

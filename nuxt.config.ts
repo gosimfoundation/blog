@@ -75,7 +75,7 @@ export default defineNuxtConfig({
     lazy: true,
     langDir: 'locales/',
     locales: [
-       {
+      {
         name: 'English',
         code: 'en',
         iso: 'en-US',
@@ -87,7 +87,7 @@ export default defineNuxtConfig({
         iso: 'zh-CN',
         file: 'zh-CN'
       },
-   ],
+    ],
     defaultLocale: 'en',
   },
 })

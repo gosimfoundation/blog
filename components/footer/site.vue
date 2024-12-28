@@ -5,10 +5,10 @@ import { footerData } from '~/data'
 <template>
   <div>
     <p class="text-black dark:text-zinc-300   text-base py-1 font-semibold">
-      About Us
+       {{ $t('about_us')}}
     </p>
     <p class="py-2 dark:text-zinc-300 ">
-      {{ footerData.aboutTheSite }}
+      {{ $t('footerData.aboutTheSite') }}
     </p>
   </div>
 </template>

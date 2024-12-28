@@ -75,10 +75,10 @@ defineOgImageComponent('About', {
           </div>
         </div>
         <h3 class="text-base sm:text-3xl font-semibold pb-7 sm:pb-12">
-          {{ aboutPage.description }}
+          {{ $t('aboutPage.description') }}
         </h3>
 
-        <p>{{ aboutPage.aboutMe }}</p>
+        <p>{{ $t('aboutPage.aboutMe') }}</p>
       </div>
       <div class="hidden sm:block col-span-3">
         <NuxtImg

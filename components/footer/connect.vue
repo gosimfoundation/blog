@@ -19,11 +19,11 @@ import { footerData, seoData } from '~/data'
     </a> -->
     <div class="my-3 space-x-3 pb-3">
       <NuxtLink to="https://gosim.org" target="_blank"
-        class="p-2 bg-gray-300 text-gray-800 rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="Home">
+        class="p-2 bg-cyan-700 text-white rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="Home">
         <Icon name="fa:home" size="1em" />
       </NuxtLink>
       <NuxtLink to="https://github.com/gosimfoundation" target="_blank"
-        class="p-2 bg-gray-300 text-gray-800 rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="Github">
+        class="p-2 bg-cyan-700 text-white rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="Github">
         <Icon name="fa:github" size="1em" />
       </NuxtLink>
       <!-- <NuxtLink
@@ -35,11 +35,11 @@ import { footerData, seoData } from '~/data'
         <Icon name="fa:linkedin-square" size="1em" />
       </NuxtLink> -->
       <NuxtLink to="https://twitter.com/gosimfoundation" target="_blank"
-        class="p-2 bg-gray-300 text-gray-800 rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="Twitter">
+        class="p-2 bg-cyan-700 text-white rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="X">
         <Icon name="fa:twitter" size="1em" />
       </NuxtLink>
       <NuxtLink to="https://mastodon.social/@gosim" target="_blank"
-        class="p-2 bg-gray-300 text-gray-800 rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="Mastodon">
+        class="p-2 bg-cyan-700 text-white rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="Mastodon">
         <Icon name="cib:mastodon" size="1em" />
       </NuxtLink>
     </div>

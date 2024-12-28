@@ -8,7 +8,9 @@ import { footerData } from '~/data'
       {{ footerData.author }}
     </p> -->
     <div class=" sm:block col-span-3">
-      <NuxtImg src="/gosim-logo2.svg" width="120" quality="50" class="rounded-md" />
+      <NuxtLink to="https://www.gosim.org">
+        <NuxtImg src="/gosim-logo2.svg" width="120" quality="50" class="rounded-md" />
+      </NuxtLink>
     </div>
     <!-- <p class="py-2 dark:text-zinc-300  ">
       {{ footerData.aboutAuthor }}
