@@ -11,6 +11,6 @@ export default defineI18nConfig(() => ({
       welcome: '欢迎',
       recent_posts: '最新文章',
       read_more: '更多',
-    },
+    }, // not used
   },
 }))

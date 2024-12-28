@@ -1,7 +1,10 @@
 <script lang="ts" setup>
-// Get Last 6 Publish Post from the content/blog directory
+const route = useRoute()
+
+const blogPath = route.path.startsWith('/zh') ? '/zh/blogs' : '/blogs'
+
 const { data } = await useAsyncData('recent-post', () =>
-  queryContent('/blogs').limit(3).sort({ _id: -1 }).find(),
+  queryContent(blogPath).limit(3).sort({ _id: -1 }).find(),
 )
 
 const formattedData = computed(() => {
@@ -37,7 +40,7 @@ useHead({
     <div class=" flex flex-row items-center space-x-3 pt-5 mx-3 pb-3">
       <Icon name="mdi:script-text-outline" size="2em" class="text-black dark:text-zinc-300 " />
       <h2 class="text-4xl font-semibold text-black dark:text-zinc-300 ">
-       {{ $t('recent_posts')}}
+        {{ $t('recent_posts')}}
       </h2>
     </div>
 
