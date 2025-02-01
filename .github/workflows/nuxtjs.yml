@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,7 +15,6 @@ jobs:
         with:
           node-version: "20"
 
-      # Install dependencies and build Nuxt app
       - run: npm install
       - run: npx nuxt build --preset github_pages
 
@@ -24,7 +24,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: github-pages-artifact
+          name: github-pages  # Ensure this name matches in the deploy job
           path: ./.output/public
 
   deploy:
@@ -40,7 +40,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: github-pages-artifact
+          name: github-pages  # Must match upload-artifact
           path: .
 
       - name: Deploy to GitHub Pages
