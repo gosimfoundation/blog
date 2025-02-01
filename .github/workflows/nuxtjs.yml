@@ -18,8 +18,14 @@ jobs:
       - run: npm install
       - run: npx nuxt build --preset github_pages
 
-      # Remove any symlinks
-      - run: find .output/public -type l -exec rm -f {} \;
+      # Remove any symlinks and problematic files
+      - name: Clean and prepare public directory
+        run: |
+          find .output/public -type l -exec rm -f {} \;
+          find .output/public -type f -name "*.map" -delete
+          du -hs .output/public
+          echo "Listing all files in public directory:"
+          ls -la .output/public
 
       # Ensure GitHub Pages compatibility
       - run: touch .output/public/.nojekyll
@@ -28,7 +34,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: .output/public  # Ensure only static files are uploaded
+          path: .output/public
+          if-no-files-found: error
 
   deploy:
     needs: build
@@ -45,6 +52,12 @@ jobs:
         with:
           name: github-pages
           path: .
+
+      - name: List downloaded files
+        run: |
+          echo "Listing downloaded files:"
+          ls -la
+          du -hs .
 
       - name: Deploy to GitHub Pages
         id: deployment
