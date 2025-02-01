@@ -3,6 +3,7 @@ import { navbarData, seoData } from './data'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
+    baseURL: "/blog/", // Replace with your GitHub repository name
     head: {
       charset: 'utf-16',
       viewport: 'width=device-width,initial-scale=1',
@@ -11,6 +12,13 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' },
+  },
+
+  nitro: {
+    preset: "static", // Forces a fully static build
+  },
+  generate: {
+    fallback: "404.html", // Needed for GitHub Pages SPA mode
   },
 
   devtools: {
@@ -91,3 +99,15 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
   },
 })
+
+export default defineNuxtConfig({
+  app: {
+    baseURL: "/your-repo-name/", // Replace with your GitHub repository name
+  },
+  nitro: {
+    preset: "static", // Forces a fully static build
+  },
+  generate: {
+    fallback: "404.html", // Needed for GitHub Pages SPA mode
+  }
+});
