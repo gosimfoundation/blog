@@ -18,11 +18,18 @@ jobs:
       - run: npm install
       - run: npx nuxt build --preset github_pages
 
-      # Remove any symlinks and problematic files
+      # Clean and prepare the public directory
       - name: Clean and prepare public directory
         run: |
-          find .output/public -type l -exec rm -f {} \;
-          find .output/public -type f -name "*.map" -delete
+          # Create a fresh temporary directory
+          mkdir -p ./temp-public
+          # Copy files to temp directory, following symlinks
+          cp -rL .output/public/* ./temp-public/
+          # Remove the original public directory
+          rm -rf .output/public
+          # Move the temp directory to be the new public directory
+          mv ./temp-public .output/public
+          # Show directory contents and size
           du -hs .output/public
           echo "Listing all files in public directory:"
           ls -la .output/public
@@ -47,18 +54,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: github-pages
-          path: .
-
-      - name: List downloaded files
-        run: |
-          echo "Listing downloaded files:"
-          ls -la
-          du -hs .
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
