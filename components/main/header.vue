@@ -28,10 +28,14 @@ function onClick(val: string) {
           </a>
         </li> -->
         <li>
-          <NuxtLink :to="switchLocalePath('en')">EN</NuxtLink>
+          <NuxtLink :to="switchLocalePath('en')">
+            EN
+          </NuxtLink>
         </li>
         <li>
-          <NuxtLink :to="switchLocalePath('zh')">中文</NuxtLink>
+          <NuxtLink :to="switchLocalePath('zh')">
+            中文
+          </NuxtLink>
         </li>
         <!-- <li>
           <button @click="setLocale('en-US')">en</button>
