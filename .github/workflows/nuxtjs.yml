@@ -14,30 +14,20 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "20"
-
       - run: npm install
       - run: npx nuxt generate  # Ensure fully static output
-
-      # Check if output directory contains only valid static files
       - name: List files in output directory
         run: ls -lah .output/public
-
-      # Ensure no symlinks
       - name: Check for symlinks
         run: find .output/public -type l -ls
-
       - name: Remove symlinks
         run: find .output/public -type l -exec rm -f {} \;
-
-      # Ensure GitHub Pages compatibility
       - run: touch .output/public/.nojekyll
-
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
-          include-hidden-files: true
-          path: .output/public  # Ensure only static files are uploaded
+          path: .output/public
 
   deploy:
     needs: build
@@ -54,7 +44,10 @@ jobs:
         with:
           name: github-pages
           path: .
-
+      - name: List downloaded files
+        run: |
+          echo "Listing downloaded files:"
+          ls -la
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
