@@ -10,12 +10,12 @@ function onClick(val: string) {
 </script>
 
 <template>
-  <div class="py-4 border-b dark:border-gray-800 font-semibold">
-    <div class="flex px-5 container max-w-7xl justify-between mx-auto items-baseline ">
+  <div class="py-4 bg-[#006d87] border-b dark:border-gray-800 text-gray-200 font-semibold">
+    <div class="flex px-5 container max-w-7xl justify-between mx-auto items-center ">
       <ul class="flex items-baseline space-x-5">
         <li class="text-base sm:text-4xl font-bold">
           <NuxtLink to="/">
-            <NuxtImg src="/gosim-logo2.svg" width="120" quality="50" class="rounded-md" />
+            <NuxtImg src="/gosim-logo-lite.svg" width="120" quality="50" class="rounded-md" />
             <!-- {{ navbarData.homeTitle }} -->
           </NuxtLink>
         </li>

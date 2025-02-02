@@ -19,23 +19,23 @@ import { footerData, seoData } from '~/data'
     </a> -->
     <div class="my-3 space-x-3 pb-3">
       <NuxtLink to="https://gosim.org" target="_blank"
-        class="p-2 bg-cyan-700 text-white rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="Home">
+        class="p-2 bg-cyan-500 text-white rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="Home">
         <Icon name="fa:home" size="1em" />
       </NuxtLink>
       <NuxtLink to="https://github.com/gosimfoundation" target="_blank"
-        class="p-2 bg-cyan-700 text-white rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="GitHub">
+        class="p-2 bg-cyan-500 text-white rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="GitHub">
         <Icon name="fa:github" size="1em" />
       </NuxtLink>
       <NuxtLink to="https://mastodon.social/@gosim" target="_blank"
-        class="p-2 bg-cyan-700 text-white rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="Mastodon">
+        class="p-2 bg-cyan-500 text-white rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="Mastodon">
         <Icon name="cib:mastodon" size="1em" />
       </NuxtLink>
       <NuxtLink to="https://www.youtube.com/@GOSIMFoundation" target="_blank"
-        class="p-2 bg-cyan-700 text-white rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="YouTube">
+        class="p-2 bg-cyan-500 text-white rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="YouTube">
         <Icon name="fa:youtube" size="1em" />
       </NuxtLink>
       <NuxtLink to="https://twitter.com/gosimfoundation" target="_blank"
-        class="p-2 bg-cyan-700 text-white rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="X">
+        class="p-2 bg-cyan-500 text-white rounded-md dark:bg-sky-700 dark:text-[#F1F2F4]" aria-label="X">
         <Icon name="fa:twitter" size="1em" />
       </NuxtLink>
     </div>

@@ -9,7 +9,7 @@ import { footerData } from '~/data'
     </p> -->
     <div class=" sm:block col-span-3">
       <NuxtLink to="https://www.gosim.org">
-        <NuxtImg src="/gosim-logo2.svg" width="120" quality="50" class="rounded-md" />
+        <NuxtImg src="/gosim-logo-lite.svg" width="120" quality="50" class="rounded-md" />
       </NuxtLink>
     </div>
     <!-- <p class="py-2 dark:text-zinc-300  ">
