@@ -14,13 +14,6 @@ export default defineNuxtConfig({
     layoutTransition: { name: 'layout', mode: 'out-in' },
   },
 
-  nitro: {
-    preset: "static", // Forces a fully static build
-  },
-  generate: {
-    fallback: "404.html", // Needed for GitHub Pages SPA mode
-  },
-
   devtools: {
     enabled: true,
   },
@@ -42,12 +35,15 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    preset: "static", // Forces a fully static build
     prerender: {
       crawlLinks: true,
-      routes: [
-        '/',
-      ],
+      routes: ['/'],
     },
+  },
+
+  generate: {
+    fallback: "404.html", // Needed for GitHub Pages SPA mode
   },
 
   colorMode: {
@@ -71,6 +67,10 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n"
   ],
 
+  image: {
+    staticFilename: '[publicPath]/images/[name]-[hash][ext]', // Helps with static image handling
+  },
+
   content: {
     highlight: {
       theme: 'dracula',
@@ -87,27 +87,15 @@ export default defineNuxtConfig({
         name: 'English',
         code: 'en',
         iso: 'en-US',
-        file: 'en-US'
+        file: 'en-US.json' // Ensuring proper file extension
       },
       {
         name: '中文',
         code: 'zh',
         iso: 'zh-CN',
-        file: 'zh-CN'
+        file: 'zh-CN.json' // Ensuring proper file extension
       },
     ],
     defaultLocale: 'en',
   },
 })
-
-export default defineNuxtConfig({
-  app: {
-    baseURL: "/your-repo-name/", // Replace with your GitHub repository name
-  },
-  nitro: {
-    preset: "static", // Forces a fully static build
-  },
-  generate: {
-    fallback: "404.html", // Needed for GitHub Pages SPA mode
-  }
-});
