@@ -3,7 +3,6 @@ import { navbarData, seoData } from './data'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    baseURL: "/blog/", // Replace with your GitHub repository name
     head: {
       charset: 'utf-16',
       viewport: 'width=device-width,initial-scale=1',
@@ -35,10 +34,12 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: "static", // Forces a fully static build
+    preset: "static",
     prerender: {
       crawlLinks: true,
-      routes: ['/'],
+      routes: [
+        '/',
+      ],
     },
   },
 
@@ -67,10 +68,6 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n"
   ],
 
-  image: {
-    staticFilename: '[publicPath]/images/[name]-[hash][ext]', // Helps with static image handling
-  },
-
   content: {
     highlight: {
       theme: 'dracula',
@@ -87,13 +84,13 @@ export default defineNuxtConfig({
         name: 'English',
         code: 'en',
         iso: 'en-US',
-        file: 'en-US.json' // Ensuring proper file extension
+        file: 'en-US.ts'
       },
       {
         name: '中文',
         code: 'zh',
         iso: 'zh-CN',
-        file: 'zh-CN.json' // Ensuring proper file extension
+        file: 'zh-CN.ts'
       },
     ],
     defaultLocale: 'en',
