@@ -13,6 +13,10 @@ export default defineNuxtConfig({
     layoutTransition: { name: 'layout', mode: 'out-in' },
   },
 
+  devServer: {
+    port: 3001, // or any other desired port number
+  },
+
   devtools: {
     enabled: true,
   },
@@ -83,13 +87,13 @@ export default defineNuxtConfig({
       {
         name: 'English',
         code: 'en',
-        iso: 'en-US',
+        language: 'en-US',
         file: 'en-US.ts'
       },
       {
         name: '中文',
         code: 'zh',
-        iso: 'zh-CN',
+        language: 'zh-CN',
         file: 'zh-CN.ts'
       },
     ],
