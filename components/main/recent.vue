@@ -53,5 +53,10 @@ useHead({
         <BlogEmpty />
       </template>
     </div>
+    <NuxtLink :to="blogPath" class="text-center text-lg font-semibold text-gray-600 dark:text-zinc-300 hover:text-cyan-500">
+      <Icon name="mdi:chevron-double-right" size="1.5em" />
+      {{ $t('more_posts')}}
+    </NuxtLink>
   </div>
+
 </template>

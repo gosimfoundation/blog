@@ -15,7 +15,7 @@ export const homePage = {
 }
 
 export const blogsPage = {
-  title: 'All Blogs',
+  title: 'All Posts',
   description: 'All blogs published by GOSIM Foundation.',
 }
 

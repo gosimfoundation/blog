@@ -21,19 +21,20 @@ function onClick(val: string) {
         </li>
       </ul>
       <ul class="flex items-center space-x-3 sm:space-x-6 text-sm sm:text-xl">
-        <!-- <li>
-          <a href="https://gosim.org"
-            class="block text-center w-full bg-sky-700 hover:bg-cyan-500 p-2 rounded-lg text-[#F1F2F4] text-sm">
-            <Icon name="fa:home" size="1.6em" />
-          </a>
-        </li> -->
         <li>
-          <NuxtLink :to="switchLocalePath('en')">
-            EN
-          </NuxtLink>
+          <a href="/blogs"
+            class="text-center w-full hover:bg-cyan-500 p-2 rounded-lg text-[#F1F2F4] ">
+            <!-- <Icon name="fa:home" size="1.6em" /> -->
+             Blogs
+          </a>
         </li>
         <li>
-          <NuxtLink :to="switchLocalePath('zh')">
+          <NuxtLink :to="switchLocalePath('en')" class="rounded-lg hover:bg-cyan-500 p-2">
+            EN
+          </NuxtLink>
+        <!-- </li>
+        <li> -->
+          <NuxtLink :to="switchLocalePath('zh')" class="rounded-lg hover:bg-cyan-500 p-2">
             中文
           </NuxtLink>
         </li>

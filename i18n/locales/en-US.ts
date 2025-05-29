@@ -1,6 +1,7 @@
 export default {
   welcome: 'Welcome',
   recent_posts: 'Recent Posts',
+  more_posts: 'More Posts',
   read_more: 'Read More',
   about_us: 'About Us',
 
