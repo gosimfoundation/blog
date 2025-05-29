@@ -15,7 +15,7 @@ import { homePage } from '~/data'
       </div>
       <div class="px-6 m-6 justify-self-center">
         <div class="hidden sm:block col-span-3">
-          <NuxtImg src="/backdrop1.png" width="500" quality="50" class="rounded-md" />
+          <NuxtImg src="/images/ind-delft.png" width="500" quality="50" class="rounded-md" />
         </div>
         <!-- <LogoDog /> -->
       </div>

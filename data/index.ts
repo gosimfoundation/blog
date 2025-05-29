@@ -9,11 +9,13 @@ export const footerData = {
   aboutTheSite: 'This is the blog site of GOSIM.org',
 }
 
+// translated
 export const homePage = {
   title: 'Global Open-Source Innovation Meetup',
   description: 'Created by the Open-Source Community, For the Open-Source Community.',
 }
 
+// translated
 export const blogsPage = {
   title: 'All Posts',
   description: 'All blogs published by GOSIM Foundation.',
@@ -24,6 +26,7 @@ export const categoryPage = {
   description: 'Posts under various categories that were #tagged in the posts.',
 }
 
+// translated
 export const aboutPage = {
   title: 'GOSIM',
   description: 'Global Open-Source Innovation Meetup',

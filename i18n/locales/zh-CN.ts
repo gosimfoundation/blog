@@ -14,6 +14,10 @@ export default {
     description: '全球开源创新汇',
     aboutMe: '由开源社区创建，服务于开源社区',
   },
+  blogsPage: {
+    title: '所有文章',
+    description: 'GOSIM Foundation 发布的所有博客文章。',
+  },
   footerData: {
       aboutTheSite: '这是 GOSIM.org 的博客',
   },

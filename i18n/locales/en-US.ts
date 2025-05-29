@@ -14,6 +14,10 @@ export default {
     description: 'Global Open-Source Innovation Meetup',
     aboutMe: 'Created by the Open-Source Community, For the Open-Source Community',
   },
+  blogsPage: {
+    title: 'All Posts',
+    description: 'All blogs published by GOSIM Foundation.',
+  },
   footerData: {
     aboutTheSite: 'This is the blog site of GOSIM.org',
   },
