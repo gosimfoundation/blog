@@ -14,7 +14,6 @@ import { categoryPage } from '~/data'
         </p>
       </div>
       <div class="px-6 justify-self-center">
-        <LogoDogs />
       </div>
     </div>
   </div>
