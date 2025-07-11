@@ -4,7 +4,7 @@ const route = useRoute()
 const blogPath = route.path.startsWith('/zh') ? '/zh/blogs' : '/blogs'
 
 const { data } = await useAsyncData('recent-post', () =>
-  queryContent(blogPath).limit(3).sort({ _id: -1 }).find(),
+  queryContent(blogPath).where({ published: true }).limit(3).sort({ date: -1 }).find(),
 )
 
 const formattedData = computed(() => {
