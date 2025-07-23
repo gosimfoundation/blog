@@ -1,7 +1,7 @@
 <script setup lang="ts">
 interface Props {
   title: string
-  image: string
+  image?: string
   alt: string
   description: string
   date: string
@@ -10,7 +10,7 @@ interface Props {
 
 withDefaults(defineProps<Props>(), {
   title: 'no-title',
-  image: '#',
+  image: undefined,
   alt: 'no-img',
   description: 'no description',
   date: 'no-date',
@@ -24,6 +24,7 @@ withDefaults(defineProps<Props>(), {
       {{ title || '' }}
     </h1>
     <NuxtImg
+      v-if="image"
       :src="image || ''"
       :alt="alt || ''"
       width="600"
