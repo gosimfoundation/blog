@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { data } = await useAsyncData('home', () => queryContent('/blogs').where({ published: true }).sort({ date: -1 }).find())
+const { data } = await useAsyncData('home', () => queryContent('/blogs').sort({ date: -1 }).find())
 
 const elementPerPage = ref(5)
 const pageNumber = ref(1)
